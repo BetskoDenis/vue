@@ -10,18 +10,18 @@
 </head>
 <body>
 <div class='tab_form' id="tab">
-<div class="tab__wrapper">
-    <div @click="isActive = true" class="tab one"><p>Гора1</p></div>
-    <div class="tab two"><p>Гора2</p></div>
-    <div class="tab three"><p>Гора3</p></div>
-</div>
+    <div class="tab__wrapper">
+        <div @click="status = true, status1 = false, status2 = false" class="tab one"><p>Гора1</p></div>
+        <div @click="status1 = true, status = false, status2 = false" class="tab two"><p>Гора2</p></div>
+        <div @click="status1 = false, status = false, status2 = true" class="tab three"><p>Гора3</p></div>
+    </div>
 
 
-<div class="screen"><img :class="{active : isActive}" src="img/53d189dfcd54fa9ecae756ddf5a7c2ee.jpg" alt="">
-    <img v-show='status1' src="img/pochemu-na-vershinah-gor-lezhit-sneg1.jpg" alt="">
-    <img  v-show='status2' src="img/slide-1960x857-07.jpg" alt=""></div>
-
-
+    <div class="screen">
+        <img v-show='status' class="screen_image" src="img/53d189dfcd54fa9ecae756ddf5a7c2ee.jpg" alt="">
+        <img v-show='status1' src="img/pochemu-na-vershinah-gor-lezhit-sneg1.jpg" alt="">
+        <img  v-show='status2' src="img/slide-1960x857-07.jpg" alt="">
+    </div>
 
 
 

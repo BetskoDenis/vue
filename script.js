@@ -1,12 +1,10 @@
 new Vue({
     el: '#tab',
     data:{
-      status: 0,
-      isActive: Boolean,
-    },
-    methods:{
-        show: Boolean,
+        status: true,
+        status1: false,
+        status2: false,
 
-        },
+    },
 
 })

@@ -25,18 +25,25 @@
 .tab:not(:last-child){
     margin-right: 10px;
 }
-.screen{
+.screen {
     width: 800px;
     height: 500px;
     object-fit: cover;
     border: 2px solid rgba(0, 0, 0, 1);
 }
+/*.screen_image, .screen_image1, .screen_image2{*/
+    /*display: none;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+    /*object-fit: cover;*/
+/*}*/
+
 .screen img{
-    display: none;
+    display: block;
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.active{
+.screen_image.active, .screen_image1.active, .screen_image2.active{
     display: block;
 }
